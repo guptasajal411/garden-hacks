@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        }
+
+        #div1,
+        #div2 {
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid red;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 10vh;
+            width: 70vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .dragDiv {
+            width: 10vw;
+            height: 10vw;
+        }
+
+        .dragImage {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+        .verdict{
+            width: 60vw;
+            font-size: 1.5rem;
+            margin: 5vh auto 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p align="center">Drag your image here...</p>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="container">
+        <div class="dragDiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="dragImage waterLily"
+                src="https://www.thespruce.com/thmb/jxqc24z8xiuCu8D3B5JWy2EE7C8=/2121x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/giantwaterlily-590a58b23df78c92834b7afc.jpg"
+                class=draggable="true" ondragstart="drag(event)" id="drag1">
+        </div>
+        <div class="dragDiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="dragImage hibiscus"
+                src="https://www.thespruce.com/thmb/JTC1Eg3L3gl0I6lNEmRnuDeX44g=/2294x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/plants-with-big-flowers-4138211-09-40fd5ac3aa704cff86f0767e5da695d0.jpg"
+                draggable="true" ondragstart="drag(event)" id="drag2">
+        </div>
+        <div class="dragDiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="dragImage sunflower"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg" draggable="true"
+                ondragstart="drag(event)" id="drag3">
+        </div>
+        <div class="dragDiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="dragImage moonflower"
+                src="https://www.thespruce.com/thmb/hdiLtqs3CGGEHGTHbdJ-y3hAsE4=/2048x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-549863119-591d078d5f9b58f4c068ae4b.jpg"
+                draggable="true" ondragstart="drag(event)" id="drag4">
+        </div>
+    </div>
+    <p class="verdict"></p>
+    <script src="dragAndDrop.js"></script>
+</body>
+
+</html>

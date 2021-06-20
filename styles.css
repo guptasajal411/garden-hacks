@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('./img1.jpg')no-repeat center center/cover;
+    height: 100vh;
+}
+
+.container{
+    margin: 20px 64px;
+    padding: 37px 111px;
+    position: absolute;
+    border: 2px dashed black;
+    width: 80vw;
+    /* background: url(./img.jpg) no-repeat center center/cover; background: url('./img.jpg') no-repeat center center/cover; */
+    
+}
+
+#city{
+    font-size: 2rem;
+    font-weight: 800;
+}
+#temperature{
+    font-size: 2rem;
+    font-weight: 800;
+}
+#humidity{
+    font-size: 2rem;
+    font-weight: 800;
+}
+#wind{
+    font-size: 2rem;
+    font-weight: 800;
+}
+#prescription{
+    font-size: 2rem;
+    font-weight: 800;
+}
+#prescription1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
