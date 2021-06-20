@@ -20,6 +20,7 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background: url("732e5e7f-7bc5-4c82-a950-1cc2c874268c.jpg")no-repeat center center/cover;
 }
 .nav-link {
   font-weight: bold;
@@ -28,6 +29,9 @@ body {
   text-decoration: none;
   color: white;
   opacity: 0.75;
+}
+.nav-link:hover{
+  color: white; !important
 }
 .logo{
   display: absolute;
@@ -45,9 +49,6 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -76,6 +77,8 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+
+
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -95,6 +98,11 @@ body {
   object-fit: cover;
   border: 1px solid red;
   border-radius: 50%;
+}
+.marketing{
+  background: url("732e5e7f-7bc5-4c82-a950-1cc2c874268c.jpg") no-repeat center center/cover;
+  padding-top: 4rem;
+  margin-bottom: 0;
 }
 
 /* Featurettes
@@ -137,5 +145,11 @@ body {
   }
 }
 footer{
-  background-color:rgb(112, 112, 112)
+  height: 10vh;
+  background-color: black;
+}
+.center{
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
 }
